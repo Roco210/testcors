@@ -1,0 +1,30 @@
+<h2>Welcome to BackEnd Ecomerce</h2>
+
+<h3>LOG IN</h3>
+
+<form action="/api/users/login" method="post">
+    <div class="row g-4 justify-content-md-center">
+        <div class="col-auto">
+            <label for="staticEmail" class="col-sm-2 col-form-label">EMAIL: </label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" name="email" id="email">
+        </div>
+    </div>
+    <br>
+    <div class="row g-3 justify-content-md-center">
+        <div class="col-auto">
+            <label for="password" class="form-label">PASSWORD:</label>
+        </div>
+        <div class="col-auto">
+            <input type="password" id="password" class="form-control" name ="password" aria-describedby="passwordHelpInline">
+        </div>
+    </div>
+    <br>
+    <input type="submit" value="SEND" class="btn btn-success"><br>
+</form><br>
+
+<a href="/singup"><button type="button" class="btn btn-success">SING UP</button></a>
+
+
+<a href="http://localhost:8080/api/users/githubSingUp"><button type="button" class="btn btn-success">Log whit Git Hub</button></a>

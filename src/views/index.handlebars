@@ -1,0 +1,24 @@
+<h1>Welcome to the proyect</h1>
+
+<a href="/realTimeProducts"><button> Realtime</button></a>
+<a href="/allproducts"><button> All product</button></a>
+<a href="/message"><button> Message</button></a>
+<a href="/cart"><button> Cart</button></a>
+
+{{#if userLog}}
+    {{#each userLog}}
+    <li>
+        <br>
+        <p>Hola {{this.first_name}}</p>
+        <p>rol :{{this.rol}}</p>
+        
+    
+    </li>
+    {{/each}}
+    {{else}}
+    <h3>No product exists</h3>
+    {{/if}}
+
+<form action="/api/users/logout" method="get">
+<input type="submit" value="LOG OUT">
+</form>

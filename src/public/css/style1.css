@@ -1,0 +1,23 @@
+body{
+    background-color: grey;
+    margin-left: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+p{
+    font-weight: bold;
+}
+li{
+    list-style:none;
+}
+
+#realTimeProds{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;}
+
+
+#chat{
+    justify-content: center;
+}

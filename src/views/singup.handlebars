@@ -1,0 +1,55 @@
+<h2>SING UP</h2>
+
+<form action="/api/users" method="post">
+
+    <div class="row g-4 justify-content-md-center">
+        <div class="col-auto">
+            <label for="first_name" class="col-5 col-form-label">FIRSTNAME: </label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" name="first_name" id="first_name">
+        </div>
+    </div>
+    <br>
+    <div class="row g-4 justify-content-md-center">
+        <div class="col-auto">
+            <label for="last_name" class="col-5 col-form-label">LASTNAME: </label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" name="last_name" id="last_name">
+        </div>
+    </div>
+    <br>
+    <div class="row g-4 justify-content-md-center">
+        <div class="col-auto">
+            <label for="staticEmail" class="col-sm-2 col-form-label">EMAIL: </label>
+        </div>
+        <div class="col-auto">
+            <input type="text" class="form-control" name="email" id="email">
+        </div>
+    </div>
+    <br>
+    <div class="row g-3 justify-content-md-center">
+        <div class="col-auto">
+            <label for="age" class="col-sm-2 col-form-label">AGE: </label>
+        </div>
+        <div class="col-auto">
+            <input type="number" class="form-control" name="age" id="age">
+        </div>
+    </div>
+    <br>
+    <div class="row g-4 justify-content-md-center">
+        <div class="col-auto">
+            <label for="password" class="col-sm-5 col-form-label">password: </label>
+        </div>
+        <div class="col-auto">
+            <input type="password" class="form-control" name="password" id="password">
+        </div>
+    </div>
+    <br>
+    <input type="submit" value="SEND" class="btn btn-success">
+
+</form><br>
+<br>
+<p>If you have a registered user please log in </p>
+<a href="/"><button class="btn btn-success">LOG IN</button></a>

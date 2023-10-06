@@ -1,0 +1,18 @@
+<h1>Cart 1</h1>
+<a href="/"><button>HOME</button></a>
+<ul>
+    {{#if cart.length}}
+    <div class="d-flex flex-wrap justify-content-Around">
+        {{#each cart}}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">prodId:{{this.prodId}}</h5>
+                <p class="card-text">quantity:{{this.quantity}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{else}}
+    <h3>No product exists</h3>
+    {{/if}}
+</ul>

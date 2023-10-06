@@ -1,0 +1,33 @@
+<h1>ALL PRODUCTUS</h1>
+<a href="/"><button>HOME</button></a>
+<br>
+<br>
+<ul>
+    {{#if allProdMap.length}}
+    <div class="d-flex flex-wrap  justify-content-Around">
+        {{#each allProdMap}}
+        <div class="card border border-success border-4 rounded-1 " style="width: 18rem;   ">
+            <img src="https://imgs.search.brave.com/dEYvjxV03Iw237s2X4mAmJi9awJmjv6kaAM4UivR68c/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jb21p/Yy5icm93c2VybGlu/Zy5jb20vZXh0cmEt/ZnJvbnQtZW5kLWJh/Y2stZW5kLnBuZw"
+                class="card-img-top" alt="18rem">
+            <div class="card-body">
+                <h5 class="card-title">{{this.title}}</h5>
+                <p class="card-text">DESCRIPTION: {{this.description}}</p>
+                <p class="card-text">ID: {{this._id}}</p>
+                <p class="card-text">CODE: {{this.code}}</p>
+                <p class="card-text">PRICE: {{this.price}}</p>
+                <p class="card-text">STOCK: {{this.stock}}</p>
+                <p class="card-text">CATEGORY: {{this.category}}</p>
+                <form action="/" method="get">
+                    <input type="submit" class="btn btn-primary" value="ADD TO CART">
+                </form>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+
+
+    {{else}}
+    <h3>No product exists</h3>
+    {{/if}}
+</ul>
